@@ -4,9 +4,14 @@
 
 #include"board.h"
 #include"player.h"
+#include "Socket.h"
 #include<iostream>
 int main()
 {
+    Socket skt=Socket();
+    skt.initial();
+    skt.mysend("");
+    /*
     board bd;
     bd=bd.oneStep(1,point(4,5));
     bd.print();
@@ -20,4 +25,5 @@ int main()
         std::cout<<it->toString()<<" ";
         it++;
     }
+     */
 }

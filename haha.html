@@ -1,0 +1,11 @@
+<html>
+<body>
+	<script type="text/javascript">
+		var socket=new WebSocket('ws:localhost:5000');
+		socket.onmessage=function(e)
+		{
+			console.log('receive data');
+		}
+	</script>
+</body>
+</html>
