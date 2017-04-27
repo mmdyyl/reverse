@@ -416,7 +416,8 @@ void board::reversecolor(point a)
 	}
 }
 
-std::set<point> board::getAvaliable(int color)const {
+const std::set<point> board::getAvaliable(int color)
+{
 	if(color==0)
 		return whiteAvaliable;
 	else
