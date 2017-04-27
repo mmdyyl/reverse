@@ -16,6 +16,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/System/Library/Frameworks/OpenGL.framework"
+  "/System/Library/Frameworks/GLUT.framework/Headers"
   )
 
 # Targets to which this target links.

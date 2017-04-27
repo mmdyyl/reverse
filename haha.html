@@ -1,10 +1,20 @@
 <html>
 <body>
 	<script type="text/javascript">
-		var socket=new WebSocket('ws:localhost:5000');
+		console.log('hahaha');
+		var socket=new WebSocket('ws://localhost:5000');
+		socket.send('Im the client');
 		socket.onmessage=function(e)
 		{
 			console.log('receive data');
+		}
+		socket.onopen=function(e)
+		{
+			console.log('opened');
+		}
+		socket.onerror=function(e)
+		{
+			console.log(e);
 		}
 	</script>
 </body>

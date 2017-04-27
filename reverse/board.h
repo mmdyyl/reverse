@@ -60,6 +60,7 @@ public:
 	//board(board bd);
 	int winner() const;
 	int gameEnd() const;
+	double getscore(int color)const;
 	void print() const;
 	board oneStep(int color, const point& position) const;
 	const std::set<point> getAvaliable(int color);

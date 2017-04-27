@@ -77,6 +77,14 @@ Socket.h
 /Users/hudi/GitHub/reverse1/reverse/Socket.h
 iostream
 -
+Opengl/gl.h
+-
+Opengl/glu.h
+-
+GLUT/glut.h
+-
+math.h
+-
 
 /Users/hudi/GitHub/reverse1/reverse/player.cpp
 player.h

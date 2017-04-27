@@ -438,3 +438,14 @@ std::string point::toString() const
 	ssm<<x<<','<<y;
 	return ssm.str();
 }
+
+double board::getscore(int color)const{
+	if(color==1)
+	{
+		return blackCheeseNum;
+	}
+	else
+	{
+		return whiteCheeseNum;
+	}
+}
