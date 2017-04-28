@@ -11,6 +11,7 @@ CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/Socket.h
 CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/board.h
 CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/game.cpp
 CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/game.h
+CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/player.h
 CMakeFiles/reverse1.dir/reverse/game.cpp.o: ../reverse/playerbase.h
 
 CMakeFiles/reverse1.dir/reverse/human.cpp.o: ../reverse/board.h
@@ -20,8 +21,10 @@ CMakeFiles/reverse1.dir/reverse/human.cpp.o: ../reverse/playerbase.h
 
 CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/Socket.h
 CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/board.h
+CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/game.h
 CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/main.cpp
 CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/player.h
+CMakeFiles/reverse1.dir/reverse/main.cpp.o: ../reverse/playerbase.h
 
 CMakeFiles/reverse1.dir/reverse/player.cpp.o: ../reverse/Socket.h
 CMakeFiles/reverse1.dir/reverse/player.cpp.o: ../reverse/board.h

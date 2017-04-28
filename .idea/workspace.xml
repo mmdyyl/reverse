@@ -12,13 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="752efcb0-cbcc-47d0-924a-8c95e9646d0d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/board.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/board.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/game.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/game.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/reverse/player.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/reverse1" afterPath="$PROJECT_DIR$/cmake-build-debug/reverse1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/board.cpp" afterPath="$PROJECT_DIR$/reverse/board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/board.h" afterPath="$PROJECT_DIR$/reverse/board.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/game.cpp" afterPath="$PROJECT_DIR$/reverse/game.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/game.h" afterPath="$PROJECT_DIR$/reverse/game.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/main.cpp" afterPath="$PROJECT_DIR$/reverse/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reverse/player.h" afterPath="$PROJECT_DIR$/reverse/player.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reverse1.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -445,16 +447,23 @@
       <option name="presentableId" value="Default" />
       <updated>1493277682613</updated>
       <workItem from="1493277684332" duration="12354000" />
-      <workItem from="1493310611948" duration="7958000" />
+      <workItem from="1493310611948" duration="8187000" />
     </task>
+    <task id="LOCAL-00001" summary="hahaha">
+      <created>1493361861257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493361861257</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20312000" />
+    <option name="totallyTimeSpent" value="20541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -462,7 +471,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -482,6 +491,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hahaha" />
+    <option name="LAST_COMMIT_MESSAGE" value="hahaha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

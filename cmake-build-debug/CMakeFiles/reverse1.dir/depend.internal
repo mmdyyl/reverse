@@ -12,6 +12,7 @@ CMakeFiles/reverse1.dir/reverse/game.cpp.o
  /Users/hudi/GitHub/reverse1/reverse/board.h
  /Users/hudi/GitHub/reverse1/reverse/game.cpp
  /Users/hudi/GitHub/reverse1/reverse/game.h
+ /Users/hudi/GitHub/reverse1/reverse/player.h
  /Users/hudi/GitHub/reverse1/reverse/playerbase.h
 CMakeFiles/reverse1.dir/reverse/human.cpp.o
  /Users/hudi/GitHub/reverse1/reverse/board.h
@@ -21,8 +22,10 @@ CMakeFiles/reverse1.dir/reverse/human.cpp.o
 CMakeFiles/reverse1.dir/reverse/main.cpp.o
  /Users/hudi/GitHub/reverse1/reverse/Socket.h
  /Users/hudi/GitHub/reverse1/reverse/board.h
+ /Users/hudi/GitHub/reverse1/reverse/game.h
  /Users/hudi/GitHub/reverse1/reverse/main.cpp
  /Users/hudi/GitHub/reverse1/reverse/player.h
+ /Users/hudi/GitHub/reverse1/reverse/playerbase.h
 CMakeFiles/reverse1.dir/reverse/player.cpp.o
  /Users/hudi/GitHub/reverse1/reverse/Socket.h
  /Users/hudi/GitHub/reverse1/reverse/board.h
