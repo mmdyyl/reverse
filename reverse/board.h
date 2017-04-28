@@ -63,7 +63,8 @@ public:
 	double getscore(int color)const;
 	void print() const;
 	board oneStep(int color, const point& position) const;
-	const std::set<point> getAvaliable(int color);
+	const std::vector<point> getAvaliable(int color);
+    const std::set<point> getAvaliableset(int color);
 private:
 	std::vector<std::vector<int>> map;
 	int whiteCheeseNum;

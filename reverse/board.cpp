@@ -43,6 +43,14 @@ board board::oneStep(int color, const point& position) const
 {
 	board tmp=board(*this);
 	tmp[position]=color;
+    if(color==1)
+    {
+        tmp.blackCheeseNum++;
+    }
+    else
+    {
+        tmp.whiteCheeseNum++;
+    }
 	tmp.reversecolor(position);
 	tmp.initial();
 	return tmp;
@@ -226,31 +234,33 @@ point board::getbegininfo(int index,std::string& direct)
 void board::reversecolor(point a)
 {
 	int colorflag = map[a.x][a.y];
-	if (colorflag == 1)
-	{
-		blackCheeseNum++;
-	}
-	else
-	{
-		whiteCheeseNum++;
-	}
 	int x = a.x-1;
 	int y = a.y;
+    std::vector<point> tbd;
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
+
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+		else if (map[x][y] == !colorflag)
 		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
+            tbd.push_back(point(x,y));
+
 		}
 		else
 			break;
@@ -258,21 +268,30 @@ void board::reversecolor(point a)
 	}
 	x = a.x + 1;
 	y = a.y;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
+
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
 		}
 		else
 			break;
@@ -280,66 +299,93 @@ void board::reversecolor(point a)
 	}
 	x = a.x;
 	y = a.y - 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		y--;
 	}
 	x = a.x;
 	y = a.y + 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		y++;
 	}
 	x = a.x - 1;
 	y = a.y - 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		x--;
@@ -347,22 +393,31 @@ void board::reversecolor(point a)
 	}
 	x = a.x - 1;
 	y = a.y + 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		x--;
@@ -370,22 +425,31 @@ void board::reversecolor(point a)
 	}
 	x = a.x + 1;
 	y = a.y + 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		x++;
@@ -393,22 +457,31 @@ void board::reversecolor(point a)
 	}
 	x = a.x + 1;
 	y = a.y - 1;
+    tbd.clear();
 	while (x >= 0 && y >= 0 && x <= 7 && y <= 7)
 	{
-		if (map[x][y] == !colorflag)
-		{
-			map[x][y] = colorflag;
-			if (colorflag == 1)
-			{
-				blackCheeseNum++;
-				whiteCheeseNum--;
-			}
-			else
-			{
-				blackCheeseNum--;
-				whiteCheeseNum++;
-			}
-		}
+        if(map[x][y]==colorflag)
+        {
+            for(int i=0;i<tbd.size();i++){
+                (*this)[tbd[i]]=colorflag;
+            }
+            if (colorflag == 1)
+            {
+                blackCheeseNum+=tbd.size();
+                whiteCheeseNum-=tbd.size();
+            }
+            else
+            {
+                blackCheeseNum-=tbd.size();
+                whiteCheeseNum+=tbd.size();
+            }
+            break;
+        }
+        else if (map[x][y] == !colorflag)
+        {
+            tbd.push_back(point(x,y));
+
+        }
 		else
 			break;
 		x++;
@@ -416,12 +489,30 @@ void board::reversecolor(point a)
 	}
 }
 
-const std::set<point> board::getAvaliable(int color)
+const std::vector<point> board::getAvaliable(int color)
 {
+    std::vector<point> result;
 	if(color==0)
-		return whiteAvaliable;
+    {
+        std::set<point>::iterator it=whiteAvaliable.begin();
+
+        while(it!=whiteAvaliable.end())
+        {
+            result.push_back(*it);
+            it++;
+        }
+    }
 	else
-		return blackAvaliable;
+    {
+        std::set<point>::iterator it=blackAvaliable.begin();
+
+        while(it!=blackAvaliable.end())
+        {
+            result.push_back(*it);
+            it++;
+        }
+    }
+    return result;
 }
 
 void board::initial()
@@ -429,7 +520,7 @@ void board::initial()
 	whiteAvaliable.clear();
 	blackAvaliable.clear();
 	detectAvaliable(1);
-	detectAvaliable(2);
+	detectAvaliable(0);
 }
 
 std::string point::toString() const
@@ -448,4 +539,16 @@ double board::getscore(int color)const{
 	{
 		return whiteCheeseNum;
 	}
+}
+
+const std::set<point> board::getAvaliableset(int color) {
+    if(color==1)
+    {
+        return blackAvaliable;
+    }
+    else
+    {
+        return whiteAvaliable;
+    }
+
 }
