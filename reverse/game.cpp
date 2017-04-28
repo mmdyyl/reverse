@@ -14,6 +14,10 @@ void game::peoplemove(point a)
 }
 void game::checknextmove()
 {
+    if(bd.getAvaliable(whoseTurn).size()==0)
+    {
+        whoseTurn=!whoseTurn;
+    }
     if(blackIsAi==1)
     {
         if(whoseTurn==1)
@@ -43,6 +47,10 @@ void game::initialAI() {
 
 int game::getWhoseTurn() const {
     return whoseTurn;
+}
+
+double game::getTimeCost() const {
+    return timeCost;
 }
 
 

@@ -552,3 +552,23 @@ const std::set<point> board::getAvaliableset(int color) {
     }
 
 }
+
+int board::getWhiteCheeseNum() const {
+    return whiteCheeseNum;
+}
+
+int board::getBlackCheeseNum() const {
+    return blackCheeseNum;
+}
+
+
+
+
+
+board::board(const board &bd) {
+    whiteCheeseNum=bd.whiteCheeseNum;
+    blackCheeseNum=bd.blackCheeseNum;
+    map=bd.map;
+    whiteAvaliable=bd.whiteAvaliable;
+    blackAvaliable=bd.blackAvaliable;
+}

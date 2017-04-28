@@ -11,7 +11,7 @@
 class game {
 public:
     game(int whofirst,int blackAi,int whiteAi):
-    whoseTurn(whofirst),blackIsAi(blackAi),whiteIsAi(whiteAi),bd()
+    whoseTurn(whofirst),blackIsAi(blackAi),whiteIsAi(whiteAi),bd(),timeCost(0)
     {
         AI=NULL;
     }
@@ -28,8 +28,12 @@ private:
     board bd;
     int whoseTurn;
     int blackIsAi;
-    int whiteIsAi;
+public:
+    double getTimeCost() const;
 
+private:
+    int whiteIsAi;
+    double timeCost;
 };
 
 

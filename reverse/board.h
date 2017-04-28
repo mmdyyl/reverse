@@ -33,7 +33,7 @@ public:
 		return false;
 	}
 	std::string toString() const;
-private:
+
 	int x;
 	int y;
 };
@@ -53,7 +53,16 @@ public:
 		map[4][4] = 0;
 		initial();
 	}
-	int& operator[](point n)
+
+    board(const board& bd);
+
+
+
+    int getBlackCheeseNum() const;
+
+    int getWhiteCheeseNum() const;
+
+    int& operator[](point n)
 	{
 		return map[n.x][n.y];
 	}
